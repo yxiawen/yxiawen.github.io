@@ -311,7 +311,7 @@ function resize() {
     h_d = 10;
   } else {
     num_d = 10;
-    h_d = 25;
+    h_d = 45;
   }
 }
 
