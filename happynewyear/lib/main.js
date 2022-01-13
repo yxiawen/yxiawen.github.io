@@ -294,7 +294,7 @@ function drawBackground(ctx) {
     ctx.shadowColor = "red";
     ctx.shadowBlur = 15;
     drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
-  } else if (start <= -15 && start > -20) {
+  } else if (start <= -20) {
     let fontSize = height / h_d;
     let str1 = "可以做我女朋友吗 ?";
     let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
