@@ -83,7 +83,7 @@ Particle.prototype.CheckLife = function () {
 //---------------------------------------------
 
 function CreateParticle(x, y, color, num) {
-  let speed = randomInt(0, num * 0.9); // 決定這次爆炸的最大範圍
+  let speed = randomInt(0, num * 1.6); // 決定這次爆炸的最大範圍
   while (num--) {
     particles.push(new Particle(x, y, color, speed));
   }
