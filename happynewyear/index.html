@@ -1,50 +1,35 @@
-<!--
- * @Author: yxiawen
- * @Date: 2022-01-13 09:35:05
- * @LastEditTime: 2022-01-13 11:14:26
- * @LastEditors: yxiawen
- * @Description: 
- * @FilePath: /blog/public/happynewyear/index.html
--->
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-tw">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>漫天烟火送给远方的你</title>
+    <meta charset="utf-8" />
+    <title>HappyNewYear</title>
     <style>
-      body {
+      * {
         padding: 0;
         margin: 0;
       }
+
+      canvas {
+        background: #eee;
+        display: block;
+        margin: 0 auto;
+      }
     </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Orbitron:400,500");
+    </style>
+
+    <script language="JavaScript" src="lib/vec.js"></script>
+    <script language="JavaScript" src="lib/drawString.js"></script>
+    <script language="JavaScript" src="lib/firework.js"></script>
+    <script language="JavaScript" src="lib/particle.js"></script>
+    <script language="JavaScript" src="lib/main.js"></script>
   </head>
 
   <body>
-    <script src="https://cdn.bootcdn.net/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="./js/particle.js"></script>
-    <script src="./js/firework.js"></script>
-    <script src="./js/sketch.js"></script>
-
-    <audio autoplay muted>
-      <source src="./yhdjj.mp3" type="audio/mpeg" />
-      <source src="./yhdjj.mp3" type="audio/ogg" />
+    <audio id="bgmMusic" autoplay hidden="true">
+      <source src="yhdjj.mp3" type="audio/mp3" />
+      Your browser does not support this audio format.
     </audio>
-    <script>
-      var autoMusic = document.querySelector("audio").play();
-      if (autoMusic !== undefined) {
-        autoMusic
-          .then(_ => {
-            // Autoplay started!
-            console.log("play");
-          })
-          .catch(error => {
-            // Autoplay was prevented.
-            // Show a "Play" button so that user can start playback.
-            console.log("noPlay");
-          });
-      }
-    </script>
   </body>
 </html>
