@@ -17,8 +17,8 @@ var h_d = 60,
 
 function fun() {
   start--;
-  if (start <= 0) {
-    start = -1;
+  if (start <= -20) {
+    start = -20;
   }
 }
 // function toggleSound() {
@@ -262,20 +262,46 @@ function drawBackground(ctx) {
     ctx.shadowColor = "red";
     ctx.shadowBlur = 15;
     drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
-  } else if (start <= 0) {
+  } else if (start <= 0 && start > -3) {
     let fontSize = height / h_d;
     let str1 = "漫天烟火送给远方的你 !";
-    //let offPos = new Vector(0, Math.tan(new Date().getTime() / 1000) * 30);
     let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
     let fontPos1 = new Vector(width / 2 - str1.length * fontSize * 0.4 + offPos.x, height / 3 + offPos.y);
     ctx.shadowColor = "red";
     ctx.shadowBlur = 15;
     drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
-    // str1 = "";
-    // str1 = "牵你的手去看烟火最浪漫的季节！";
-    // let fontPos2 = new Vector(width / 2 - str1.length * fontSize * 0.3 + offPos.x, height / 2 + fontSize + offPos.y);
-    // drawString(ctx, str1, fontPos2.x, fontPos2.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
-    // drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
+  } else if (start <= -3 && start > -6) {
+    let fontSize = height / h_d;
+    let str1 = "想和你一起去看烟火浪漫的季节 !";
+    let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
+    let fontPos1 = new Vector(width / 2 - str1.length * fontSize * 0.4 + offPos.x, height / 3 + offPos.y);
+    ctx.shadowColor = "red";
+    ctx.shadowBlur = 15;
+    drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
+  } else if (start <= -6 && start > -10) {
+    let fontSize = height / h_d;
+    let str1 = "想和你一起度过每个日出日落 !";
+    let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
+    let fontPos1 = new Vector(width / 2 - str1.length * fontSize * 0.4 + offPos.x, height / 3 + offPos.y);
+    ctx.shadowColor = "red";
+    ctx.shadowBlur = 15;
+    drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
+  } else if (start <= -10 && start > -15) {
+    let fontSize = height / h_d;
+    let str1 = "想和你一起度过每个春夏秋冬 !";
+    let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
+    let fontPos1 = new Vector(width / 2 - str1.length * fontSize * 0.4 + offPos.x, height / 3 + offPos.y);
+    ctx.shadowColor = "red";
+    ctx.shadowBlur = 15;
+    drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
+  } else if (start <= -15 && start > -20) {
+    let fontSize = height / h_d;
+    let str1 = "可以做我女朋友吗 ?";
+    let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
+    let fontPos1 = new Vector(width / 2 - str1.length * fontSize * 0.4 + offPos.x, height / 3 + offPos.y);
+    ctx.shadowColor = "red";
+    ctx.shadowBlur = 15;
+    drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
   }
 
   ctx.shadowBlur = 0;
