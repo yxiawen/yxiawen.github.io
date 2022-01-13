@@ -1,7 +1,7 @@
 <!--
  * @Author: yxiawen
  * @Date: 2022-01-13 09:35:05
- * @LastEditTime: 2022-01-13 10:21:28
+ * @LastEditTime: 2022-01-13 10:43:55
  * @LastEditors: yxiawen
  * @Description: 
  * @FilePath: /blog/public/happynewyear/index.html
@@ -27,14 +27,24 @@
     <script src="./js/firework.js"></script>
     <script src="./js/sketch.js"></script>
 
-    <video id="audio" controls="" autoplay="autoplay" loop="loop" name="media">
+    <audio autoplay muted>
       <source src="./yhdjj.mp3" type="audio/mpeg" />
-    </video>
+      <source src="./yhdjj.mp3" type="audio/ogg" />
+    </audio>
     <script>
-      setTimeout(() => {
-        var myAuto = document.getElementById("audio");
-        myAuto.play();
-      }, 100);
+      var autoMusic = document.querySelector("audio").play();
+      if (autoMusic !== undefined) {
+        autoMusic
+          .then(_ => {
+            // Autoplay started!
+            console.log("play");
+          })
+          .catch(error => {
+            // Autoplay was prevented.
+            // Show a "Play" button so that user can start playback.
+            console.log("noPlay");
+          });
+      }
     </script>
   </body>
 </html>
