@@ -12,7 +12,7 @@ var keys = {},
   mousePos = {};
 var texts = [];
 
-var h_d = 25,
+var h_d = 60,
   num_d = 10;
 
 function fun() {
@@ -271,9 +271,11 @@ function drawBackground(ctx) {
     ctx.shadowColor = "red";
     ctx.shadowBlur = 15;
     drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
-    // let str2 = "牵你的手去看烟火最浪漫的季节！";
-    // let fontPos2 = new Vector(width / 2 - str2.length * fontSize * 0.3 + offPos.x, height / 2 + fontSize + offPos.y);
-    // drawString(ctx, str2, fontPos2.x, fontPos2.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
+    // str1 = "";
+    // str1 = "牵你的手去看烟火最浪漫的季节！";
+    // let fontPos2 = new Vector(width / 2 - str1.length * fontSize * 0.3 + offPos.x, height / 2 + fontSize + offPos.y);
+    // drawString(ctx, str1, fontPos2.x, fontPos2.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
+    // drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
   }
 
   ctx.shadowBlur = 0;
@@ -311,7 +313,7 @@ function resize() {
     h_d = 10;
   } else {
     num_d = 10;
-    h_d = 45;
+    h_d = 60;
   }
 }
 
