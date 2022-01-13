@@ -1,7 +1,7 @@
 <!--
  * @Author: yxiawen
  * @Date: 2022-01-13 09:35:05
- * @LastEditTime: 2022-01-13 09:35:29
+ * @LastEditTime: 2022-01-13 10:21:28
  * @LastEditors: yxiawen
  * @Description: 
  * @FilePath: /blog/public/happynewyear/index.html
@@ -26,5 +26,15 @@
     <script src="./js/particle.js"></script>
     <script src="./js/firework.js"></script>
     <script src="./js/sketch.js"></script>
+
+    <video id="audio" controls="" autoplay="autoplay" loop="loop" name="media">
+      <source src="./yhdjj.mp3" type="audio/mpeg" />
+    </video>
+    <script>
+      setTimeout(() => {
+        var myAuto = document.getElementById("audio");
+        myAuto.play();
+      }, 100);
+    </script>
   </body>
 </html>
