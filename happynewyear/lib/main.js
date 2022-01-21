@@ -318,7 +318,7 @@ function drawBackground(ctx) {
     ctx.shadowColor = "red";
     ctx.shadowBlur = 15;
     drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
-  } else if (start <= -24) {
+  } else if (start <= -21) {
     let fontSize = height / h_d;
     let str1 = "和你度过每个春夏秋冬 ！";
     let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
