@@ -24,6 +24,20 @@
     <script language="JavaScript" src="lib/firework.js"></script>
     <script language="JavaScript" src="lib/particle.js"></script>
     <script language="JavaScript" src="lib/main.js"></script>
+    <script>
+      window.onbeforeunload = onbeforeunload_handler;
+      window.onunload = onunload_handler;
+      function onbeforeunload_handler() {
+        var warning = "做我女朋友吗?";
+        alert(warning);
+        return warning;
+      }
+
+      function onunload_handler() {
+        var warning = "做我女朋友吗";
+        alert(warning);
+      }
+    </script>
   </head>
 
   <body>
