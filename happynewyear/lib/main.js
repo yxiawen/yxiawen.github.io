@@ -17,8 +17,8 @@ var h_d = 60,
 
 function fun() {
   start--;
-  if (start <= -27) {
-    start = -27;
+  if (start <= -30) {
+    start = -30;
   }
 }
 // function toggleSound() {
@@ -334,7 +334,7 @@ function drawBackground(ctx) {
     ctx.shadowColor = "red";
     ctx.shadowBlur = 15;
     drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
-  } else if (start <= -27) {
+  } else if (start <= -27 && start < -30) {
     let fontSize = height / h_d;
     let str1 = "--以上谨献于美珊 ！";
     let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
