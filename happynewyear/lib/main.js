@@ -336,7 +336,7 @@ function drawBackground(ctx) {
     drawString(ctx, str1, fontPos1.x, fontPos1.y, "rgba(255,255,0,1)", fontSize, "orbitron", 0, 0, 0);
   } else if (start <= -27 && start > -30) {
     let fontSize = height / h_d;
-    let str1 = "--以上谨献于美珊 ！";
+    let str1 = "--以上献给美珊 ！";
     let offPos = new Vector(0, Math.sin(new Date().getTime() / 1000) * 30);
     let fontPos1 = new Vector(width / 2 - str1.length * fontSize * 0.4 + offPos.x, height / 3 + offPos.y);
     ctx.shadowColor = "red";
